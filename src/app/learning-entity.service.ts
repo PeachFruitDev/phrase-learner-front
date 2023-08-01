@@ -1,9 +1,9 @@
-import {Injectable} from '@angular/core';
+import {Injectable, isDevMode} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {LearningEntitiesToday, LearningEntity} from "./entities";
 import {Observable} from "rxjs";
 
-const SERVER_URL = 'http://localhost:8080';
+const SERVER_URL = isDevMode() && 'http://localhost:8080' || 'http://backend:8080';
 const ADD_API = '/add';
 const TODAY_API = '/today';
 const REVIEW_API = '/review';
