@@ -8,4 +8,4 @@ RUN npm install -g @angular/cli@16.1.6
 RUN ng build --configuration=production
 
 EXPOSE 4200
-CMD ["ng", "serve", "--prod", "--host", "0.0.0.0", "--port", "4200"]
+CMD ["ng", "serve", "--configuration=production", "--disable-host-check", "--host", "0.0.0.0", "--port", "4200"]
