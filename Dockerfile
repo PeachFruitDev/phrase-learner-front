@@ -4,7 +4,7 @@ COPY package.json tsconfig*.json angular.json ./
 COPY src/ src
 
 RUN npm install
-RUN npm run build
+RUN ng build --prod
 
 EXPOSE 4200
-CMD ["npm", "start"]
+CMD ["ng", "serve", "--prod", "--host", "0.0.0.0", "--port", "4200"]
