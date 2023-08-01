@@ -1,0 +1,18 @@
+.toolbar {
+  flex: 0 1 60px;
+  background-color: #1976d2;
+  width: 100%;
+  position: relative;
+}
+
+.toolbar_button {
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+}
+
+footer {
+  flex: 0 1 60px;
+  background-color: #1976d2;
+  width: 100%;
+}

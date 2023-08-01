@@ -1,0 +1,8 @@
+<div class="insider">
+  <div class="inside">
+    <span [innerHTML]="!stop && learningPassage || stop && 'STOPPED' || ''" class="passage entry"></span>
+    <span class="passage entry"><b>{{!stop && learningTerm || ""}}</b></span>
+    <button (click)="inverseTimer()" class="entry" mat-raised-button>TIMER</button>
+    <mat-progress-spinner [value]="timeRemainingSpinner" class="entry"/>
+  </div>
+</div>
