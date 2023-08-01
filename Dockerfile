@@ -7,4 +7,4 @@ RUN npm install
 RUN ng build --prod
 
 EXPOSE 4200
-CMD ["ng", "serve", "--prod"]
+CMD ["ng", "serve", "--prod", "--host", "0.0.0.0", "--port", "4200"]
