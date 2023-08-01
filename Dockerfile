@@ -1,6 +1,6 @@
 FROM node:18-alpine
 WORKDIR /front
-COPY package.json tsconfig*.json agular.json ./
+COPY package.json tsconfig*.json angular.json ./
 COPY src/ src
 
 RUN npm install
